@@ -1,4 +1,6 @@
 import './StudentPortalGuide.css';
+import studentLoginImg from '../assets/studentlogin.png';
+import studentDashboardImg from '../assets/studentdashboard.png';
 
 const StudentPortalGuide = () => {
   return (
@@ -8,7 +10,7 @@ const StudentPortalGuide = () => {
 
       <h2>1. Student Login</h2>
       <p>Access the student portal by clicking the <strong>'Student Login'</strong> button on the main page.</p>
-      <img src="/src/assets/studentlogin.png" alt="Student Login Screen" className="screenshot" />
+      <img src={studentLoginImg} alt="Student Login Screen" className="screenshot" />
       <div className="step">
         <h3>Login Steps:</h3>
         <ol>
@@ -20,7 +22,7 @@ const StudentPortalGuide = () => {
 
       <h2>2. Marking Attendance</h2>
       <p>Once logged in, you'll see the student dashboard with your attendance options.</p>
-      <img src="/src/assets/studentdashboard.png" alt="Student Dashboard" className="screenshot" />
+      <img src={studentDashboardImg} alt="Student Dashboard" className="screenshot" />
       
       <div className="step">
         <h3>How to Mark Your Attendance:</h3>

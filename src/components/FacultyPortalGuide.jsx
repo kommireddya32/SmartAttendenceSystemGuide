@@ -1,4 +1,8 @@
+import { Link } from 'react-router-dom';
 import './FacultyPortalGuide.css';
+import facultyLoginImg from '../assets/facultylogin.png';
+import facultyDashboardImg from '../assets/facultydashboard.png';
+import liveSessionImg from '../assets/livesession.png';
 
 const FacultyPortalGuide = () => {
   return (
@@ -8,7 +12,7 @@ const FacultyPortalGuide = () => {
 
       <h2>1. Faculty Login</h2>
       <p>Click the <strong>'Faculty Login'</strong> button on the main page to access the sign-in form.</p>
-      <img src="/src/assets/facultylogin.png" alt="Faculty Login Screen" className="screenshot" />
+      <img src={facultyLoginImg} alt="Faculty Login Screen" className="screenshot" />
       <ul>
         <li className="list-item">Use your registered <strong>Email</strong> (e.g., <code>prof@example.com</code>)</li>
         <li className="list-item">Enter your <strong>Password</strong> (e.g., <code>pass123</code>)</li>
@@ -17,7 +21,7 @@ const FacultyPortalGuide = () => {
 
       <h2>2. Live Session Management</h2>
       <p>After logging in, you'll see the main dashboard for managing attendance sessions.</p>
-      <img src="/src/assets/facultydashboard.png" alt="Faculty Dashboard" className="screenshot" />
+      <img src={facultyDashboardImg} alt="Faculty Dashboard" className="screenshot" />
       
       <h3>Starting a New Session:</h3>
       <ol>
@@ -30,7 +34,7 @@ const FacultyPortalGuide = () => {
         <strong>Note:</strong> The QR code refreshes every 3 seconds for security purposes. Students must scan the code while it's active.
       </div>
       
-      <img src="/src/assets/livesession.png" alt="Live Session QR Code" className="screenshot" />
+      <img src={liveSessionImg} alt="Live Session QR Code" className="screenshot" />
       
       <h3>Ending a Session:</h3>
       <ul>

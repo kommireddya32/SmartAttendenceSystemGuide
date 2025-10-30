@@ -1,4 +1,10 @@
+import { Link } from 'react-router-dom';
 import './AdminPortalGuide.css';
+import adminLoginImg from '../assets/adminlogin.png';
+import adminDashboardImg from '../assets/admindashboard.png';
+import manageFacultyImg from '../assets/managefaculty.png';
+import manageStudentImg from '../assets/managestudent.png';
+import addStudentImg from '../assets/addstudent.png';
 
 const AdminPortalGuide = () => {
   return (
@@ -11,7 +17,7 @@ const AdminPortalGuide = () => {
         Go to Admin Login Page
       </a>
       <p><strong>URL:</strong> <code>https://smart-attendence-systems-1.onrender.com/admin</code></p>
-      <img src="/src/assets/adminlogin.png" alt="Admin Login Screen" className="screenshot" />
+      <img src={adminLoginImg} alt="Admin Login Screen" className="screenshot" />
       <ul>
         <li className="list-item">Enter your registered <strong>Email</strong> (e.g., <code>admin@example.com</code>).</li>
         <li className="list-item">Enter your <strong>Password</strong> (e.g., <code>Admin@123</code>).</li>
@@ -19,7 +25,7 @@ const AdminPortalGuide = () => {
       </ul>
 
       <h2>2. Dashboard Overview</h2>
-      <img src="/src/assets/admindashboard.png" alt="Admin Dashboard" className="screenshot" />
+      <img src={adminDashboardImg} alt="Admin Dashboard" className="screenshot" />
       <ul>
         <li className="list-item"><strong>Total Students:</strong> Current count of all registered students.</li>
         <li className="list-item"><strong>Total Faculty:</strong> Current count of all faculty members.</li>
@@ -28,7 +34,7 @@ const AdminPortalGuide = () => {
       </ul>
 
       <h2>3. Manage Faculty</h2>
-      <img src="/src/assets/managefaculty.png" alt="Manage Faculty" className="screenshot" />
+      <img src={manageFacultyImg} alt="Manage Faculty" className="screenshot" />
       <h3>Adding a New Faculty Member:</h3>
       <ul>
         <li className="list-item">Click the <strong>Add New Faculty</strong> button.</li>
@@ -37,9 +43,9 @@ const AdminPortalGuide = () => {
       </ul>
 
       <h2>4. Manage Students</h2>
-      <img src="/src/assets/managestudent.png" alt="Manage Students" className="screenshot" />
+      <img src={manageStudentImg} alt="Manage Students" className="screenshot" />
       <h3>Adding a New Student:</h3>
-      <img src="/src/assets/addstudent.png" alt="Add Student" className="screenshot" />
+      <img src={addStudentImg} alt="Add Student" className="screenshot" />
       <ul>
         <li className="list-item">Click <strong>Add New Student</strong>.</li>
         <li className="list-item">Enter <strong>Full Name</strong> and <strong>Email</strong>.</li>
